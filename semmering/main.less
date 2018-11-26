@@ -1,0 +1,23 @@
+/*
+ * LESS styl.
+ */
+@main-color: #55C;
+
+.heading() {
+  color: @main-color;
+  border-left: 10px solid @main-color;
+  padding-left: 1em;
+}
+BODY {
+  background: #C0C0C0;
+}
+H1 {
+  border: 1px solid black;
+  .heading();
+  @media print {
+      border: 0px none; 
+    }
+}    
+H2 {
+  color: @main-color;
+}

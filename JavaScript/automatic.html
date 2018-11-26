@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Stránka s obsahem</title>
+<script type="text/javascript" language="javascript"
+    src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() {
+    $('H2, H3').each(function(index, title) {
+        $("#toc").append("<li>" + $(title).text() + "</li>");
+    });
+});
+</script>
+</head>
+<body>
+<ul id="toc" style="color:blue">
+</ul>
+<h1>Hlavní nadpis</h1>
+ 
+<p>Lorem Ipsum...</p>
+ 
+<h2>První sekce</h2>
+<h3>Podsekce 1 </h3>
+<p>Lorem Ipsum...</p>
+ 
+<h2>Druhá sekce</h2>
+<h3>Podsekce 2 </h3>
+<p>Lorem Ipsum...</p>
+
+<h2>Třetí sekce</h2>
+<h3>Podsekce 3 </h3>
+<p>Lorem Ipsum...</p>
+
+<h2>Čtvrtá sekce</h2>
+<h3>Podsekce 4 </h3>
+<p>Lorem Ipsum...</p>
+ 
+ 
+</body>
+</html>
